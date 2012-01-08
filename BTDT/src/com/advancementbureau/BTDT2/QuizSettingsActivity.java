@@ -68,7 +68,7 @@ public class QuizSettingsActivity extends QuizActivity {
             final EditText p2 = (EditText) layout.findViewById(R.id.EditText_Pwd2);
             final TextView error = (TextView) layout.findViewById(R.id.TextView_PwdProblem);
             p2.addTextChangedListener(new TextWatcher() {
-                @Override
+                
                 public void afterTextChanged(Editable s) {
                     String strPass1 = p1.getText().toString();
                     String strPass2 = p2.getText().toString();
@@ -80,11 +80,10 @@ public class QuizSettingsActivity extends QuizActivity {
                 }
 
                 // ... other required overrides need not be implemented 
-                @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 }
 
-                @Override
+                
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
                 }
             });

@@ -18,7 +18,7 @@
 	        android:layout_alignParentLeft="true"
 	        android:layout_alignParentTop="true"
 	        android:padding="10dp"
-	        android:src="@android:drawable/ic_popup_sync" ></ImageView>
+	        android:src="@android:drawable/ic_dialog_info" ></ImageView>
 	    <TextView
             android:id="@+id/TextView_Change01"
             android:layout_height="wrap_content"
@@ -36,29 +36,37 @@
 	    <ImageView
             android:id="@+id/ImageView_ChangeHeader2"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_popup_sync"
+            android:src="@android:drawable/ic_dialog_info"
             android:layout_gravity="left|center_vertical"
             android:layout_width="wrap_content"
             android:padding="10dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"></ImageView>
     </RelativeLayout>
-    <TextView
-        android:id="@+id/TextView_HelpText"
-        android:textColor="@color/title_color"
-        android:layout_width="match_parent"
+    <ScrollView
+        android:id="@+id/ScrollViewSettings"
         android:layout_height="match_parent"
-        android:fadingEdge="vertical"
-        android:textColorLink="@color/logo_color"
-        android:textSize="@dimen/help_text_size"
-        android:drawablePadding="@dimen/help_text_drawable_padding"
-        android:padding="@dimen/help_text_padding"
-        android:textStyle="bold"
-        android:autoLink="all"
-        android:linksClickable="true"
-        android:isScrollContainer="true"
+        android:layout_width="match_parent"
         android:scrollbars="vertical"
-        android:fadingEdgeLength="@dimen/help_text_fading"
-        android:scrollbarStyle="outsideOverlay"
-        android:bufferType="spannable"/>
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+	    <TextView
+	        android:id="@+id/TextView_HelpText"
+	        android:textColor="@color/title_color"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:autoLink="all"
+	        android:isScrollContainer="true"
+	        android:textStyle="bold"
+	        android:drawablePadding="@dimen/help_text_drawable_padding"
+	        android:textColorLink="@color/logo_color"
+	        android:linksClickable="true"
+	        android:fadingEdgeLength="@dimen/help_text_fading"
+	        android:fadingEdge="vertical"
+	        android:scrollbars="vertical"
+	        android:padding="@dimen/help_text_padding"
+	        android:textSize="@dimen/help_text_size"
+	        android:scrollbarStyle="outsideOverlay"
+	        android:bufferType="spannable"></TextView>
+    </ScrollView>
 </LinearLayout>
