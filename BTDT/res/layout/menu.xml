@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/bkgrnd" >
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/RelativeLayout01"
+	    android:layout_alignParentTop="true" >
+	    <ImageView
+	        android:id="@+id/ImageView_MenuHeader"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/menu_icons" ></ImageView>
+	    <TextView
+	        android:id="@+id/TextView01"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/menu"
+	        android:textSize="@dimen/screen_title_size"
+	        android:layout_gravity="fill_horizontal|center"
+	        android:textColor="@color/title_color"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:shadowColor="@android:color/white"
+	        android:shadowDx="0"
+	        android:shadowDy="0"
+	        android:shadowRadius="10" ></TextView>
+	    <ImageView
+            android:id="@+id/ImageView_MenuHeader2"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_icons"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"></ImageView>
+	</RelativeLayout>
+	<ListView
+	    android:id="@+id/ListView_Menu"
+	    android:divider="@drawable/divider"
+	    android:listSelector="@drawable/selector"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/RelativeLayout01" ></ListView>
+	<ImageView
+	    android:id="@+id/ImageView_MenuBottom"
+	    android:src="@drawable/half"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:scaleType="centerInside"
+	    android:adjustViewBounds="true" ></ImageView>
+</RelativeLayout>

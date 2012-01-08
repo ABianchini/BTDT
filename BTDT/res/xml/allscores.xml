@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scores>
+    <score
+        username="ALL"
+        score="789"
+        rank="1" />
+    <score
+        username="SCO"
+        score="456"
+        rank="2" />
+    <score
+        username="RES"
+        score="123"
+        rank="3" />
+</scores>

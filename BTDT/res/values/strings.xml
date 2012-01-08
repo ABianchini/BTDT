@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Been There, Done That!</string>
+    <string name="menu">MAIN MENU</string>
+    <string name="help">Help Screen</string>
+    <string name="settings">Settings</string>
+    <string name="game">The Game</string>
+    <string name="scores">High Scores</string>
+    <string name="app_title_top">BEEN THERE</string>
+    <string name="app_title_bottom">DONE THAT!</string>
+    <string name="app_version_info">Version 0.3.1\nCopyright © 2011 Advancement Bureau\nAll Rights Reserved.</string>
+    <string name="menu_item_settings">Settings</string>
+    <string name="menu_item_play">Play Game</string>
+    <string name="menu_item_scores">View Scores</string>
+    <string name="menu_item_help">Help</string>
+    <string name="all_scores">All Scores</string>
+    <string name="friends_scores">Scores of Friends</string>
+    <string name="no_scores">No scores to show</string>
+    <string name="username">Username</string>
+    <string name="rank">Ranking</string>
+    <string name="score">Score</string>
+    <string name="wait_msg">Retrieving Scores&#8230;</string>
+    <string name="wait_title">Loading&#8230;</string>
+    <string name="nick">Nickname:</string>
+    <string name="email">Email:</string>
+    <string name="password_set">Password Set</string>
+    <string name="password">Password:</string>
+    <string name="password_empty">Password not set</string>
+    <string name="password_wrong">Did not match</string>
+    <string name="dob">Date of Birth:</string>
+    <string name="dob_set">Set Date of Birth</string>
+    <string name="dob_empty">DOB not set</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="neuter">Prefer Not to Say</string>
+    <string name="settings_password">Enter Password:</string>
+    <string name="settings_password_repeat">Confirm Password:</string>
+    <string name="settings_pwd_equal">Passwords match</string>
+    <string name="settings_pwd_not_equal">Passwords do not match</string>
+    <string name="settings_button_pwd">Set Password</string>
+    <string name="settings_pwd_set">Password Set</string>
+    <string name="changelog_button">View Changelog</string>
+    <string name="changelog_title">Changelog</string>
+
+</resources>
