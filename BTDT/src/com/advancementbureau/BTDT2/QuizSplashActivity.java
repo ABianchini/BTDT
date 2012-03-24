@@ -1,6 +1,7 @@
 package com.advancementbureau.BTDT2;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
@@ -16,6 +17,17 @@ public class QuizSplashActivity extends QuizActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+        final String FIRST_BOOT = "boot";
+        SharedPreferences bootPref = getSharedPreferences(FIRST_BOOT, MODE_PRIVATE);
+        SharedPreferences.Editor editor = bootPref.edit();
+        if (bootPref.getBoolean(FIRST_BOOT, true)) {
+        	startAnimating();
+        	editor.putBoolean("boot", false);
+            editor.commit();
+        } else {
+        	startActivity(new Intent(QuizSplashActivity.this, QuizMenuActivity.class));
+    		QuizSplashActivity.this.finish();
+        }
         startAnimating();
     }
     private void startAnimating() {
